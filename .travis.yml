@@ -1,0 +1,29 @@
+language: android
+jdk:
+  - oraclejdk7
+
+env:
+  global:
+    - TERM=dumb
+
+android:
+  components:
+    - build-tools-23.0.1
+    - android-23
+    - platform-tools
+    - extra-google-m2repository
+    - extra-android-m2repository
+
+  licenses:
+    - 'android-sdk-license-.+'
+
+install: /bin/true
+
+script: ./gradlew build
+
+deploy:
+  - provider: script
+    script: ./gradlew bintrayUpload -PbintrayUser=${BINTRAY_USER} -PbintrayKey=${BINTRAY_KEY} -PdryRun=false
+    skip_cleanup: true
+    on:
+      tags: true

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="490dp"
+    android:height="349dp"
+    android:viewportHeight="349"
+    android:viewportWidth="490">
+
+    <group
+        android:name="viento"
+        android:translateX="27.000000"
+        android:translateY="44.000000">
+        <path
+            android:name="Stroke-7"
+            android:pathData="M0.00484880637,12.5885521 L72.1778196,12.5885521"
+            android:strokeColor="#10485B"
+            android:strokeWidth="5.20000029" />
+        <path
+            android:name="Stroke-9"
+            android:pathData="M24.7597268,25.2599004 L96.9326976,25.2599004"
+            android:strokeColor="#10485B"
+            android:strokeWidth="5.20000029" />
+        <path
+            android:name="Stroke-11"
+            android:pathData="M17.3729443,0.242110112 L89.5459151,0.242110112"
+            android:strokeColor="#10485B"
+            android:strokeWidth="5.20000029" />
+        <path
+            android:name="Stroke-13"
+            android:pathData="M334.245936,35.1175596 L406.418907,35.1175596"
+            android:strokeColor="#10485B"
+            android:strokeWidth="5.20000029" />
+        <path
+            android:name="Stroke-15"
+            android:pathData="M359.000684,47.7889079 L431.173655,47.7889079"
+            android:strokeColor="#10485B"
+            android:strokeWidth="5.20000029" />
+        <path
+            android:name="Stroke-17"
+            android:pathData="M351.613902,22.7711176 L423.786873,22.7711176"
+            android:strokeColor="#10485B"
+            android:strokeWidth="5.20000029" />
+    </group>
+
+</vector>
