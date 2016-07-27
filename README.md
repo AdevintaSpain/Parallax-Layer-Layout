@@ -3,7 +3,7 @@
 <img src="art/ovni.gif" align="left" width="204px" height="168px"/>
 <img align="left" width="0" height="168px" hspace="10"/>
 
-[![Bintray](https://img.shields.io/bintray/v/schibstedspain/maven/parallax-layer-layout.svg?maxAge=2592000)](https://bintray.com/schibstedspain/maven/parallax-layer-layout/) [![Build Status](https://travis-ci.org/scm-spain/parallax-layer-layout.svg?branch=master)](https://travis-ci.org/scm-spain/parallax-layer-layout)
+[![Bintray](https://img.shields.io/bintray/v/schibstedspain/maven/parallax-layer-layout.svg?maxAge=2592000)](https://bintray.com/schibstedspain/maven/parallax-layer-layout/) [![Build Status](https://travis-ci.org/SchibstedSpain/parallax-layer-layout.svg?branch=master)](https://travis-ci.org/SchibstedSpain/parallax-layer-layout)
 
 Let's you add layered parallax effect to your Android views or images based on things like device rotation.
 
@@ -150,7 +150,7 @@ If you need a different parallax order you can change this behavior by overridin
 ```
 
 # Contribute
-For bugs, requests, questions and discussions please use [Github Issues](https://github.com/scm-spain/parallax-layer-layout/issues).	
+For bugs, requests, questions and discussions please use [Github Issues](https://github.com/SchibstedSpain/parallax-layer-layout/issues).	
 
 # License
 
