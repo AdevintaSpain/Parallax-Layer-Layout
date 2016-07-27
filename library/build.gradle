@@ -31,5 +31,5 @@ publish {
     artifactId = 'parallax-layer-layout'
     publishVersion = '1.0.0'
     desc = 'Let\'s you add layered parallax effect to your views or images based on things like device rotation.'
-    website = 'https://github.com/scm-spain/parallax-layer-layout'
+    website = 'https://github.com/SchibstedSpain/parallax-layer-layout'
 }
