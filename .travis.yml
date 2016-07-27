@@ -3,6 +3,7 @@ language: android
 branches:
   only:
     - master
+    - /^v\d+\.\d+\.\d+$/
 
 jdk:
   - oraclejdk7
