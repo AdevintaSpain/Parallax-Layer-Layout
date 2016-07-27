@@ -1,4 +1,9 @@
 language: android
+
+branches:
+  only:
+    - master
+
 jdk:
   - oraclejdk7
 
