@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
+apply from: '../quality.gradle'
 
 sourceCompatibility = 1.7
 
