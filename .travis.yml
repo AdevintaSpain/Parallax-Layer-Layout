@@ -27,7 +27,7 @@ android:
 
 install: /bin/true
 
-script: ./gradlew check build
+script: ./gradlew build
 
 deploy:
   - provider: script
