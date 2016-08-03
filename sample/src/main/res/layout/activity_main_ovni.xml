@@ -1,79 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".MainActivity"
+    >
 
-    <com.schibsted.spain.parallaxlayerlayout.ParallaxLayerLayout
-        android:id="@+id/parallax"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        app:parallaxScaleVertical="0.25">
+  <com.schibsted.spain.parallaxlayerlayout.ParallaxLayerLayout
+      android:id="@+id/parallax"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      app:parallaxScaleVertical="0.25"
+      >
 
-        <ImageView
-            android:id="@+id/layer_nubes"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:src="@drawable/ovni_nubes" />
+    <ImageView
+        android:id="@+id/layer_nubes"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ovni_nubes"
+        />
 
-        <ImageView
-            android:id="@+id/layer_viento"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:src="@drawable/ovni_viento" />
+    <ImageView
+        android:id="@+id/layer_viento"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ovni_viento"
+        />
 
 
-        <ImageView
-            android:id="@+id/layer_estrellas_x"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:src="@drawable/ovni_estrellas_x" />
+    <ImageView
+        android:id="@+id/layer_estrellas_x"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ovni_estrellas_x"
+        />
 
-        <ImageView
-            android:id="@+id/layer_estrellas_o"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:src="@drawable/ovni_estrellas_o" />
+    <ImageView
+        android:id="@+id/layer_estrellas_o"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ovni_estrellas_o"
+        />
 
-        <ImageView
-            android:id="@+id/layer_nave"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:src="@drawable/ovni_nave" />
+    <ImageView
+        android:id="@+id/layer_nave"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ovni_nave"
+        />
 
-        <ImageView
-            android:id="@+id/layer_icon"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:src="@drawable/ovni_icon" />
+    <ImageView
+        android:id="@+id/layer_icon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ovni_icon"
+        />
 
-    </com.schibsted.spain.parallaxlayerlayout.ParallaxLayerLayout>
+  </com.schibsted.spain.parallaxlayerlayout.ParallaxLayerLayout>
 
-    <RadioGroup
-        android:id="@+id/updater_group"
-        android:layout_width="match_parent"
+  <RadioGroup
+      android:id="@+id/updater_group"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:orientation="horizontal"
+      android:padding="16dp"
+      >
+
+    <RadioButton
+        android:id="@+id/updater_sensor_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal"
-        android:padding="16dp">
+        android:layout_marginRight="16dp"
+        android:text="Sensor"
+        tools:checked="true"
+        />
 
-        <RadioButton
-            android:id="@+id/updater_sensor_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="16dp"
-            android:text="Sensor"
-            tools:checked="true" />
-
-        <RadioButton
-            android:id="@+id/updater_auto_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Auto" />
-    </RadioGroup>
+    <RadioButton
+        android:id="@+id/updater_auto_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auto"
+        />
+  </RadioGroup>
 </LinearLayout>
 

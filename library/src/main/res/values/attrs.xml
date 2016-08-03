@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="ParallaxLayerLayout">
-        <attr name="parallaxOffsetBase" format="dimension"/>
-        <attr name="parallaxOffsetIncrement" format="dimension"/>
-        <attr name="parallaxScaleHorizontal" format="float"/>
-        <attr name="parallaxScaleVertical" format="float"/>
-    </declare-styleable>
+  <declare-styleable name="ParallaxLayerLayout">
+    <attr name="parallaxOffsetBase"
+          format="dimension"/>
+    <attr name="parallaxOffsetIncrement"
+          format="dimension"/>
+    <attr name="parallaxScaleHorizontal"
+          format="float"/>
+    <attr name="parallaxScaleVertical"
+          format="float"/>
+  </declare-styleable>
 
-    <declare-styleable name="ParallaxLayerLayout_LayoutParams">
-        <attr name="layout_parallaxZIndex" format="integer"/>
-        <attr name="layout_parallaxIncrementMultiplier" format="float"/>
-    </declare-styleable>
+  <declare-styleable name="ParallaxLayerLayout_LayoutParams">
+    <attr name="layout_parallaxZIndex"
+          format="integer"/>
+    <attr name="layout_parallaxIncrementMultiplier"
+          format="float"/>
+  </declare-styleable>
 </resources>

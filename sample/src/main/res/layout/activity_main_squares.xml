@@ -9,63 +9,64 @@
     tools:context=".MainActivity"
     >
 
-    <com.schibsted.spain.parallaxlayerlayout.ParallaxLayerLayout
-        android:id="@+id/parallax"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        app:parallaxOffsetBase="20dp"
-        app:parallaxOffsetIncrement="10dp"
-        app:parallaxScaleVertical="0.5"
-        >
+  <com.schibsted.spain.parallaxlayerlayout.ParallaxLayerLayout
+      android:id="@+id/parallax"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      app:parallaxOffsetBase="20dp"
+      app:parallaxOffsetIncrement="10dp"
+      app:parallaxScaleVertical="0.5"
+      >
 
-        <View
-            android:id="@+id/layer_3"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:background="@drawable/background_primary_dark"
-            app:layout_parallaxZIndex="3"
-            />
+    <View
+        android:id="@+id/layer_3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/background_primary_dark"
+        app:layout_parallaxZIndex="3"
+        />
 
-        <View
-            android:id="@+id/layer_2"
-            android:layout_width="152dp"
-            android:layout_height="152dp"
-            android:background="@drawable/background_primary"
-            />
+    <View
+        android:id="@+id/layer_2"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        android:background="@drawable/background_primary"
+        />
 
-        <View
-            android:id="@+id/layer_1"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:background="@drawable/background_accent"
-            />
+    <View
+        android:id="@+id/layer_1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/background_accent"
+        />
 
-    </com.schibsted.spain.parallaxlayerlayout.ParallaxLayerLayout>
+  </com.schibsted.spain.parallaxlayerlayout.ParallaxLayerLayout>
 
-    <RadioGroup
-        android:id="@+id/updater_group"
-        android:layout_width="match_parent"
+  <RadioGroup
+      android:id="@+id/updater_group"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:orientation="horizontal"
+      android:padding="16dp"
+      >
+
+    <RadioButton
+        android:id="@+id/updater_sensor_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal"
-        android:padding="16dp">
+        android:layout_marginRight="16dp"
+        android:text="Sensor"
+        tools:checked="true"
+        />
 
-        <RadioButton
-            android:id="@+id/updater_sensor_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="16dp"
-            android:text="Sensor"
-            tools:checked="true"
-            />
-
-        <RadioButton
-            android:id="@+id/updater_auto_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Auto"
-            />
-    </RadioGroup>
+    <RadioButton
+        android:id="@+id/updater_auto_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auto"
+        />
+  </RadioGroup>
 </LinearLayout>
 
