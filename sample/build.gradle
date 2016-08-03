@@ -1,25 +1,26 @@
 apply plugin: 'com.android.application'
+apply from: '../quality.gradle'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+  compileSdkVersion 23
+  buildToolsVersion "23.0.1"
 
-    defaultConfig {
-        applicationId "com.schibsted.spain.parallaxlayerlayout.sample"
-        minSdkVersion 14
-        targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+  defaultConfig {
+    applicationId "com.schibsted.spain.parallaxlayerlayout.sample"
+    minSdkVersion 14
+    targetSdkVersion 23
+    versionCode 1
+    versionName "1.0"
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
     }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
+  }
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:23.3.0'
-    compile project(':library')
+  compile 'com.android.support:appcompat-v7:23.3.0'
+  compile project(':library')
 }
