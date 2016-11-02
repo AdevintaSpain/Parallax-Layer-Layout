@@ -156,7 +156,7 @@ For bugs, requests, questions and discussions please use [Github Issues](https:/
 This library was developed by [Rafa Vázquez](https://github.com/Sloy/) with the idea of moving images from [Alex Bailón](https://github.com/abailon) for the [Infojobs' Android application](https://play.google.com/store/apps/details?id=net.infojobs.mobile.android).
 
 # Device requirements
-This layout needs a gyroscope powered device. Sadly, there are some low-end phones that doesn't have it. In that case, the layed image won't move, but it will appear great.
+This layout needs a gyroscope powered device. Sadly, there are some low-end phones that doesn't have it. In that case, the layered image won't move, but it will appear great.
 
 # License
 
