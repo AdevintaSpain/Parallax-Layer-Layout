@@ -16,5 +16,7 @@
           format="integer"/>
     <attr name="layout_parallaxIncrementMultiplier"
           format="float"/>
+    <attr name="layout_parallaxEnabled"
+          format="boolean"/>
   </declare-styleable>
 </resources>
