@@ -149,6 +149,20 @@ If you need a different parallax order you can change this behavior by overridin
 </com.schibsted.spain.parallaxlayerlayout.ParallaxLayerLayout>
 ```
 
+## Static layer
+
+You can disable the parallax effect in any of the views to stop them from moving with the attribute **layout_parallaxEnabled**:
+
+```xml
+<View
+    android:id="@+id/layer_static"
+    android:layout_width="180dp"
+    android:layout_height="180dp"
+    android:background="@color/colorPrimaryDark"
+    app:layout_parallaxEnabled="false" />
+```
+
+
 # Contribute
 For bugs, requests, questions and discussions please use [Github Issues](https://github.com/SchibstedSpain/parallax-layer-layout/issues).	
 

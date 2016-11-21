@@ -121,6 +121,9 @@ public class ParallaxLayerLayout extends FrameLayout {
   @Size(2)
   private float[] calculateFinalTranslationPx(View child, @Size(2) float[] translations) {
     LayoutParams lp = (LayoutParams) child.getLayoutParams();
+    if (!lp.enabled) {
+      return new float[] { 0f, 0f };
+    }
     int xSign = translations[0] > 0 ? 1 : -1;
     int ySign = translations[1] > 0 ? 1 : -1;
 
@@ -168,6 +171,7 @@ public class ParallaxLayerLayout extends FrameLayout {
     private float offsetPx;
     private int customIndex = -1;
     private float incrementMultiplier = 1.0f;
+    private boolean enabled = true;
 
     public LayoutParams(Context c, AttributeSet attrs) {
       super(c, attrs);
@@ -178,6 +182,8 @@ public class ParallaxLayerLayout extends FrameLayout {
             a.getInt(R.styleable.ParallaxLayerLayout_LayoutParams_layout_parallaxZIndex, -1);
         incrementMultiplier = a.getFloat(
             R.styleable.ParallaxLayerLayout_LayoutParams_layout_parallaxIncrementMultiplier, 1.0f);
+        enabled = a.getBoolean(
+            R.styleable.ParallaxLayerLayout_LayoutParams_layout_parallaxEnabled, true);
       } finally {
         a.recycle();
       }
