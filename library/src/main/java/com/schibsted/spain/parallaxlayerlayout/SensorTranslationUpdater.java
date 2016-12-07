@@ -44,8 +44,10 @@ public class SensorTranslationUpdater
 
   public void registerSensorManager() {
     if (sensorManager != null) {
-      sensorManager.registerListener(this,
-          sensorManager.getDefaultSensor(Sensor.TYPE_ROTATION_VECTOR), DEFAULT_SAMPLING_PERIOD);
+      Sensor rotationVectorSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ROTATION_VECTOR);
+      if (rotationVectorSensor != null) {
+        sensorManager.registerListener(this, rotationVectorSensor, DEFAULT_SAMPLING_PERIOD);
+      }
     }
   }
 
