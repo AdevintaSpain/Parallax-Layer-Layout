@@ -70,7 +70,7 @@ Grab the latest version from jCenter:
 
 ```groovy
 dependencies {
-  compile 'com.schibsted.spain:parallax-layer-layout:1.1.0'
+  compile 'com.schibsted.spain:parallax-layer-layout:1.1.1'
 }
 ```
 
