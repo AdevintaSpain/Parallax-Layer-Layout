@@ -5,7 +5,7 @@
 
 [![Bintray](https://img.shields.io/bintray/v/schibstedspain/maven/parallax-layer-layout.svg?maxAge=2592000)](https://bintray.com/schibstedspain/maven/parallax-layer-layout/) [![Build Status](https://travis-ci.org/SchibstedSpain/Parallax-Layer-Layout.svg?branch=master)](https://travis-ci.org/SchibstedSpain/Parallax-Layer-Layout)
 
-Let's you add layered parallax effect to your Android views or images based on things like device rotation.
+Lets you add layered parallax effect to your Android views or images based on things like device rotation.
 
 We use it at [InfoJobs](https://play.google.com/store/apps/details?id=net.infojobs.mobile.android) for our error and empty states.
 
