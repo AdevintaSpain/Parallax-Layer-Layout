@@ -6,7 +6,7 @@ branches:
     - /^v\d+\.\d+\.\d+$/
 
 jdk:
-  - oraclejdk7
+  - oraclejdk8
 
 env:
   global:
