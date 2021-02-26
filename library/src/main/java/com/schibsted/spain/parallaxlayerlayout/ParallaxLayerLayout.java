@@ -25,7 +25,7 @@ public class ParallaxLayerLayout extends FrameLayout {
   private TranslationUpdater translationUpdater;
 
   public ParallaxLayerLayout(Context context) {
-    super(context);
+    this(context, null);
   }
 
   public ParallaxLayerLayout(Context context, AttributeSet attrs) {
@@ -62,6 +62,17 @@ public class ParallaxLayerLayout extends FrameLayout {
   @Override
   protected void onFinishInflate() {
     super.onFinishInflate();
+
+    computeOffsets();
+
+    if (isInEditMode()) {
+      updateTranslations(new float[] { 1.0f, 1.0f });
+    }
+  }
+
+  @Override
+  protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+    super.onLayout(changed, left, top, right, bottom);
 
     computeOffsets();
 
